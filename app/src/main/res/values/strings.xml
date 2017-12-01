@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">First Responder</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_medical_name">MedicalActivityName</string>
+    <string name="link"><a href="https://www.google.pl/">Google</a></string>
+</resources>

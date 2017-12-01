@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pandey.abidha.sqlliteapp">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:banner="@mipmap/first_res"
+        android:icon="@mipmap/first_res"
+        android:label="FIRST RESPONDER"
+        android:roundIcon="@mipmap/first_res"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".FrontPageActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddDetails" />
+        <activity android:name=".UserActivity" />
+        <activity android:name=".TrainedUserDetails" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ActionActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".MedicalActivity" />
+        <activity android:name=".MedicalActivityName" />
+        <activity android:name=".AllergiesActivity" />
+        <activity android:name=".BleedingActivity" />
+        <activity android:name=".BurnsActivity" />
+        <activity android:name=".ChokingActivity" />
+        <activity android:name=".FluActivity" />
+        <activity android:name=".DiabeteActivity" />
+        <activity android:name=".FireActivity" />
+        <activity android:name=".FloodActivity" />
+        <activity android:name=".EarthQuakeActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".RegisteredUserActivity" />
+        <activity android:name=".VolunteerActivity" />
+        <activity android:name=".SearchMedicalActivity" />
+        <activity android:name=".PopupActivity" />
+        <activity android:name=".NewUserActivity" />
+        <activity android:name=".TrainedUserCancelActivity"></activity>
+    </application>
+
+</manifest>
