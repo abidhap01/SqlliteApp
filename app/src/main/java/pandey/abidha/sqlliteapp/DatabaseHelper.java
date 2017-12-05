@@ -235,11 +235,16 @@ public  Boolean volunteerExpVerification(String email){
         SQLiteDatabase db=this.getWritableDatabase();
         Cursor res=null;
         try {
-            res=db.rawQuery("select * from "+ TABLE_NAME_MEDICAL + " where "+ MEDICAL_ISSUE+" LIKE "+"'%" +searchText+ "%'"+"", null);
+            res=db.rawQuery("select * from "+ TABLE_NAME_MEDICAL + " where  upper("+MEDICAL_ISSUE+") = "+"upper('" +searchText+ "')"+"", null);
+
             if(res.moveToNext()){
                 medData=res.getColumnIndex("MEDICAL_DATA");
                 medDataValue=res.getString(medData);
             }
+            if(medDataValue==null){
+                medDataValue="No Data Found";
+            }
+
         }catch (Exception e){
             e.printStackTrace();
         }
@@ -281,7 +286,7 @@ public  Boolean volunteerExpVerification(String email){
       TrainedUserDetails trainedUserDetails=new TrainedUserDetails();
 
       try {
-          res=db.rawQuery("select * from "+ TABLE_NAME_VOLUNTEER_RECORDS + " where "+ EMAIL+" LIKE "+"'%" +email+ "%'"+"", null);
+          res=db.rawQuery("select * from "+ TABLE_NAME_VOLUNTEER_RECORDS + " where "+ EMAIL+" LIKE "+"'%" +email+ "%'"+"order by "+ID+" desc"+"", null);
 
           if(res.moveToNext()){
               populateTable=new ArrayList<PopulateTable>();

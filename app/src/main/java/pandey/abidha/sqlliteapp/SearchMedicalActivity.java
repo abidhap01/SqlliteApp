@@ -19,11 +19,9 @@ public class SearchMedicalActivity extends AppCompatActivity {
 
         String data= mydb.getQueryResult(searchText);
 
-        if(searchText.isEmpty()){
-            tVSearchnew.setText("No Data Found!");
-        }else{
+
             tVSearchnew.setText(data);
-        }
+
 
     }
 }

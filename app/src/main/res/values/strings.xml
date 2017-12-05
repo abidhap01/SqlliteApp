@@ -2,5 +2,13 @@
     <string name="app_name">First Responder</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_medical_name">MedicalActivityName</string>
-    <string name="link"><a href="https://www.google.pl/">Google</a></string>
-</resources>
+    <string name="prompt">"select"</string>
+        <string-array name="brew_array">
+            <item>Select Medical Emergencies</item>
+            <item>Allergies</item>
+            <item>Bleeding</item>
+            <item>Burns</item>
+            <item>Choking</item>
+            <item>Flu</item>
+        </string-array>
+    </resources>

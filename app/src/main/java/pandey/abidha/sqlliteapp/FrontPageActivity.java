@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 public class FrontPageActivity extends AppCompatActivity {
@@ -19,7 +20,9 @@ public class FrontPageActivity extends AppCompatActivity {
     public Button buttonFld;
     public Button buttonErthQk;
     public Button buttonSrch;
-    public TextView searchText;
+   // public TextView searchText;
+    public EditText editTextSearchMe;
+    public  String  searchTextNew;
 
 
     @Override
@@ -53,8 +56,8 @@ public class FrontPageActivity extends AppCompatActivity {
         buttonSrch=(Button)findViewById(R.id.buttonGo);
         buttonSrch.setTextColor(Color.WHITE);
         //buttonSrch.setBackgroundColor(Color.RED);
-        searchText=(TextView) findViewById(R.id.editTextSearchMed) ;
-
+        editTextSearchMe=(EditText) findViewById(R.id.editTextSearchMed) ;
+         searchTextNew=editTextSearchMe.getText().toString();
 
         OnButtonClick();
         OnMedicalClick();
@@ -123,9 +126,14 @@ public class FrontPageActivity extends AppCompatActivity {
         buttonSrch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i= new Intent(FrontPageActivity.this,SearchActivity.class);
-                i.putExtra ( "Search", searchText.getText().toString() );
-                startActivity(i);
+                if(!( editTextSearchMe.getText().toString().isEmpty())){
+                    Intent i= new Intent(FrontPageActivity.this,SearchActivity.class);
+                    i.putExtra ( "Search", editTextSearchMe.getText().toString() );
+                    startActivity(i);
+                }else{
+                    Toast.makeText(FrontPageActivity.this,"Search condition can not b empty!", Toast.LENGTH_LONG).show();
+                }
+
             }
         });
     }

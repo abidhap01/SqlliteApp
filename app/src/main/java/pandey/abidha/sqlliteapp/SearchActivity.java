@@ -23,11 +23,9 @@ public class SearchActivity extends AppCompatActivity {
         tVSearch=(TextView)findViewById(R.id.textViewSearch) ;
 
        String data= mydb.getQueryResult(searchText);
-        if(searchText.isEmpty()){
-            tVSearch.setText("No Data found!");
-        }else{
+
             tVSearch.setText(data);
-        }
+
 
 
 
