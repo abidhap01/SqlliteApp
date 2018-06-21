@@ -114,6 +114,18 @@ It has zero configuration
 It is transactional
 SQLite database is integrated with the application that accesses database. The application directly interact with the SQLite database, it reads and writes from the database files which are stored.
 
+![screen shot 2018-06-21 at 11 40 28 am](https://user-images.githubusercontent.com/28520902/41731449-7366be0c-754c-11e8-9257-abd391d57c0f.png)
+
+![screen shot 2018-06-21 at 12 13 22 pm](https://user-images.githubusercontent.com/28520902/41731522-9dae2d9e-754c-11e8-8e11-a6b4108ccdbb.png)
+
+![screen shot 2018-06-21 at 12 13 28 pm](https://user-images.githubusercontent.com/28520902/41731526-a0700b4c-754c-11e8-8000-7a2c2ad9d335.png)
+
+![screen shot 2018-06-21 at 12 13 34 pm](https://user-images.githubusercontent.com/28520902/41731529-a2cc0f62-754c-11e8-8e15-39870449b41a.png)
+![screen shot 2018-06-21 at 12 13 42 pm](https://user-images.githubusercontent.com/28520902/41731533-a442f496-754c-11e8-89db-f647b7bff7ba.png)
+![screen shot 2018-06-21 at 12 13 47 pm](https://user-images.githubusercontent.com/28520902/41731535-a64c87a2-754c-11e8-9251-440b72b2b049.png)
+![screen shot 2018-06-21 at 12 13 53 pm](https://user-images.githubusercontent.com/28520902/41731538-a84c44fc-754c-11e8-9cfe-af3db41a3986.png)
+
+
 Future Scope
 
 Future scope for First responder application will be add video functionality will be added. When First responder will search medical emergency, with text description there will be a short video clip appear on screen. The main advantage of video clip will be first responder have clear idea about situation and which will be easy for him/her to handle situation.
